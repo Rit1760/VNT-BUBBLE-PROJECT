@@ -5,11 +5,14 @@
 import LocationPopup from "@/Components/LocationPopup"
 import { useState } from "react"
 import "../../../../Styles/Locations.css"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 export default function Locations() {
 
   const [locations, setLocations] = useState([])
   const [showPopupLO, setShowPopupLO] = useState(false)
+
 
   const handleAddLocation = (data) => {
     const newLocation = {

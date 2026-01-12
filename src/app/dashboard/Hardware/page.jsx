@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";
 
+
 export default function Hardware() {
 
   const [search, setSearch] = useState("");
@@ -123,7 +124,7 @@ const confirmDeleteProject = () => {
               </button>
             </div>
 
-            <div className="projects_list">
+            {/* <div className="projects_list">
               {projects.length === 0 ? (
 
                 <div className="con1_NO_PRO">
@@ -142,7 +143,23 @@ const confirmDeleteProject = () => {
               ) : (
 
                 filteredProjects.map((p, i) => (
-<div key={i} className="project_item">
+<div key={i} className="project_item"> */}
+<div className="projects_list">
+  {projects.length === 0 ? (
+    <div className="no_projects_center">
+      <FontAwesomeIcon
+        icon={faBell}
+        style={{ width: "40px", height: "40px", color: "#ff6600" }}
+      />
+      <p>No projects yet</p>
+      <p>Seems like you have not added any projects yet</p>
+    </div>
+  ) : (
+    filteredProjects.map((p, i) => (
+      <div key={i} className="project_item">
+
+
+
 
   {/* Always visible content */}
   <div className="project_visible">

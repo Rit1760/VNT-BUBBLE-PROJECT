@@ -4,10 +4,14 @@ import ReportsPopup from "@/Components/ReportsPopup";
 import { useState } from "react"
 import "../../../../Styles/Reports.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleDown, faAngleUp, faDownLong , faUpLong } from "@fortawesome/free-solid-svg-icons"
+import { faAngleDown, faAngleUp, faDownLong , faUpLong  ,  faBell } from "@fortawesome/free-solid-svg-icons"
 faDownLong
 FontAwesomeIcon
 import { useRouter } from "next/navigation";
+
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBell } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Reports({ }) {
     const [projectRP, setProjectsRP] = useState("");
@@ -22,7 +26,6 @@ const [showDeletePopupR, setShowDeletePopupR] = useState(false);
 const [deleteIndexR, setDeleteIndexR] = useState(null);
 const [deleteTextR, setDeleteTextR] = useState("");
 const router = useRouter();
-
 
 
 
@@ -151,12 +154,26 @@ const confirmDeleteProjectR = () => {
                             </button>
                         </div>
 
-                        <div className="projects_list_Reports">
+                        {/* <div className="projects_list_Reports">
                             {projectRP.length === 0 ? (
                                 <p>No projects yet</p>
                             ) : (
                                 projectRP.map((p, i) => (
-                                    <div key={i} className="project_item_Reports">
+                                    <div key={i} className="project_item_Reports"> */}
+<div className="projects_list_Reports">
+  {projectRP.length === 0 ? (
+    <div className="no_projects_center">
+      <FontAwesomeIcon
+        icon={faBell}
+        style={{ width: "40px", height: "40px", color: "#ff6600" }}
+      />
+      <p>No projects yet</p>
+      <p>Seems like you have not added any Reports yet</p>
+    </div>
+  ) : (
+    projectRP.map((p, i) => (
+      <div key={i} className="project_item_Reports">
+
 
 
 

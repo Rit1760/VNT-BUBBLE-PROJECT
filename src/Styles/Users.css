@@ -14,7 +14,6 @@
   font-family: 'Lato',sans-serif;
 }
 
-
 .project_item_Users {
   background: #ffffff;
   border: 1.5px solid #e0e0e0;
@@ -376,3 +375,32 @@
   text-transform: uppercase;
   box-shadow: 0 4px 12px rgba(255, 102, 0, 0.35);
 }
+
+
+
+
+
+
+.no_projects_center {
+  grid-column: 1 / -1;          
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  text-align: center;
+  gap: 8px;
+}
+
+.no_projects_center p:first-of-type {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.no_projects_center p:last-of-type {
+  font-size: 14px;
+  color: #777;
+  max-width: 280px;
+}
+

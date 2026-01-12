@@ -4,7 +4,8 @@ import { useState } from "react"
 import "../../../Styles/Users.css"
 import UsersPopup from "@/Components/UsersPopup";
 import { useRouter } from "next/navigation";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 export default function Users() {
     const [search, setSearch] = useState("");
@@ -13,7 +14,6 @@ export default function Users() {
   const [editIndexU, setEditIndexU] = useState(null);
 const [editDataU, setEditDataU] = useState(null);
 const router = useRouter();
-
 
 const [showDeletePopupU, setShowDeletePopupU] = useState(false);
 const [deleteIndexU, setDeleteIndexU] = useState(null);
@@ -122,12 +122,32 @@ const confirmDeleteProjectU = () => {
               </button>
             </div>
 
-            <div className="projects_list_Users">
+            {/* <div className="projects_list_Users">
               {projectU.length === 0 ? (
                 <p>No projects yet</p>
               ) : (
                 filteredProjectsU.map((p, i) => (
                   <div key={i} className="project_item_Users">
+
+
+ */}
+
+
+<div className="projects_list_Users">
+  {projectU.length === 0 ? (
+    <div className="no_projects_center">
+      <FontAwesomeIcon
+        icon={faBell}
+        style={{ width: "40px", height: "40px", color: "#ff6600" }}
+      />
+      <p>No projects yet</p>
+      <p>Seems like you have not added any Users yet</p>
+    </div>
+  ) : (
+    filteredProjectsU.map((p, i) => (
+      <div key={i} className="project_item_Users">
+
+
 
 
                           <div className="clone_Users_item" style={{display:"flex" , alignItems:"center"}}>

@@ -4,6 +4,8 @@ import { useState } from "react"
 import "../../../Styles/Solutions.css"
 import SolutionPopup from "@/Components/SolutionPopup";
 import { useRouter } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 export default function Solutions() {
   const [projectS, setProjectsS] = useState([]);
@@ -97,17 +99,11 @@ const confirmDeleteProject = () => {
   setDeleteTextS("");
 };
 
-
-
   const handleToggleActive = (index) => {
     const updatedProjects = [...projectS]
     updatedProjects[index].isActive = !updatedProjects[index].isActive
     setProjectsS(updatedProjects)
   }
-
-
-
-
 
   return (
     <>
@@ -126,12 +122,45 @@ const confirmDeleteProject = () => {
               </button>
             </div>
 
-            <div className="projects_list_Solutions">
+            {/* <div className="projects_list_Solutions">
               {projectS.length === 0 ? (
                 <p>No projects yet</p>
               ) : (
                   filteredProjectsS.map((p, i) => (
-                  <div key={i} className="project_item_Solutions">
+                  <div key={i} className="project_item_Solutions"> */}
+
+
+
+
+{/* 
+<div className="projects_list_Solutions">
+  {projectS.length === 0 ? (
+    <div className="no_projects_center">
+                            <FontAwesomeIcon
+                        icon={faBell}
+                        style={{ width: "40px", height: "40px", color: "#ff6600" }}
+                      />
+      <p>No projects yet</p>
+      <p>Seems Like You Have not added projects Yet</p>
+    </div>
+  ) : (
+    filteredProjectsS.map((p, i) => (
+      <div key={i} className="project_item_Solutions"> */}
+
+
+<div className="projects_list_Solutions">
+  {projectS.length === 0 ? (
+    <div className="no_projects_center">
+      <FontAwesomeIcon
+        icon={faBell}
+        style={{ width: "40px", height: "40px", color: "#ff6600" }}
+      />
+      <p>No projects yet</p>
+      <p>Seems like you have not added any projects yet</p>
+    </div>
+  ) : (
+    filteredProjectsS.map((p, i) => (
+      <div key={i} className="project_item_Solutions">
 
 
 

@@ -4,12 +4,15 @@ import { useState } from "react"
 import "../../../Styles/Devices.css"
 import DevicePopup from "@/Components/DevicePopup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleDown, faAngleUp, faDownLong , faFile , faCalendarDays , faBars } from "@fortawesome/free-solid-svg-icons"
+import { faAngleDown, faAngleUp, faDownLong , faFile , faCalendarDays , faBars ,  faBell } from "@fortawesome/free-solid-svg-icons"
 faDownLong
 FontAwesomeIcon
 import { useRouter } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
 
+
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -149,12 +152,34 @@ const handleCloneProjectD = (index) => {
                             </button>
                         </div>
 
-                        <div className="projects_list_Devices">
+                        {/* <div className="projects_list_Devices">
                             {projectD.length === 0 ? (
                                 <p>No Devices yet</p>
                             ) : (
                               filteredProjectsD.map((p, i) => (
-                                    <div key={i} className="project_item_Devices">
+                                    <div key={i} className="project_item_Devices"> */}
+
+
+<div className="projects_list_Devices">
+  {projectD.length === 0 ? (
+    <div className="no_projects_center">
+      <FontAwesomeIcon
+        icon={faBell}
+        style={{ width: "40px", height: "40px", color: "#ff6600" }}
+      />
+      <p>No projects yet</p>
+      <p>Seems like you have not added any Devices yet</p>
+    </div>
+  ) : (
+    filteredProjectsD.map((p, i) => (
+      <div key={i} className="project_item_Devices">
+
+
+
+
+
+
+
 
                                               <div className="clone_Devices_item" style={{display:"flex" , alignItems:"center"}}>
         <div className="col1_clone_Devices" style={{width:"50%"}}>

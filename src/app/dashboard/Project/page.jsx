@@ -6,12 +6,19 @@ import "../../../Styles/Project.css"
 import ProjectPopup from "@/components/ProjectPopup"
 import { useRouter } from "next/navigation";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
+
 export default function Project(){
   const [projectP, setProjectsP] = useState([])
   const [showPopupP, setShowPopupP] = useState(false)
     const [searchP, setSearchP] = useState("");
   const [editIndex, setEditIndexP] = useState(null);
 const [editData, setEditDataP] = useState(null);
+
+
+
+
 
       // const [showPopup, setShowPopup] = useState(false);
 
@@ -52,6 +59,7 @@ const handleAddProjectP = (projectPP) => {
 
   setShowPopupP(false);
 };
+
 
 
   const handleToggleActive = (index) => {
@@ -129,12 +137,31 @@ const confirmDeleteProjectP = () => {
           </div>
 
 
-          <div className="projects_list_Project">
+          {/* <div className="projects_list_Project">
 {projectP.length === 0 ? (
   <p>No projects yet</p>
 ) : (
   filteredProjectsP.map((p, i) => (
-    <div key={i} className="project_item_Project">
+    <div key={i} className="project_item_Project"> */}
+
+
+
+<div className="projects_list_Project">
+  {projectP.length === 0 ? (
+    <div className="no_projects_center">
+      <FontAwesomeIcon
+        icon={faBell}
+        style={{ width: "40px", height: "40px", color: "#ff6600" }}
+      />
+      <p>No projects yet</p>
+      <p>Seems like you have not added any projects yet</p>
+    </div>
+  ) : (
+    filteredProjectsP.map((p, i) => (
+      <div key={i} className="project_item_Project">
+
+
+
 
       <div className="clone_Prooject_item" style={{display:"flex" , alignItems:"center"}}>
         <div className="col1_clone_Project" style={{width:"30%"}}>

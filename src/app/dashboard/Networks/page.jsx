@@ -4,6 +4,8 @@ import { useState } from "react";
 import "../../../Styles/Networks.css";
 import NetworksPopup from "@/Components/NetworksPopup";
 import { useRouter } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Networks() {
@@ -122,13 +124,26 @@ const confirmDeleteProjectN = () => {
             </div>
 
 
-
-            <div className="projects_list_Networks">
+            {/* <div className="projects_list_Networks">
               {projectsN.length === 0 ? (
                 <p>No projects yet</p>
               ) : (
                   filteredProjectsN.map((p, i) => (
-                  <div key={i} className="project_item_Networks">
+                  <div key={i} className="project_item_Networks"> */}
+<div className="projects_list_Networks">
+  {projectsN.length === 0 ? (
+    <div className="no_projects_center">
+      <FontAwesomeIcon
+        icon={faBell}
+        style={{ width: "40px", height: "40px", color: "#ff6600" }}
+      />
+      <p>No projects yet</p>
+      <p>Seems like you have not added any projects yet</p>
+    </div>
+  ) : (
+    filteredProjectsN.map((p, i) => (
+      <div key={i} className="projects_list_Networks">
+
 
 
 
