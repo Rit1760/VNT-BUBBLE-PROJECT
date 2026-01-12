@@ -1,0 +1,553 @@
+/* 
+/* Main wrapper */
+/* .ProjectViewPage_Main {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+} */
+
+/* Center container */
+/* .ProjectViewPage_container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+/* Row */
+/* .ProjectViewPage_row1 {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+} */
+
+/* LEFT COLUMN — 40% */
+/* .ProjectViewPage_col1 {
+  width: 40%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+
+.ProjectViewPage_col2_FlexSection {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.tab_btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tab_btn:hover {
+  background: #f3f4f6;
+}
+
+.tab_btn.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+} */
+
+/* Content box */
+/* .ProjectViewPage_col2_Content {
+  padding: 16px;
+  border-radius: 12px;
+  background: #f9fafb;
+  min-height: 200px;
+}
+
+
+
+
+.HardwareViewPage_col2_FlexSection {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.tab_btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tab_btn:hover {
+  background: #f3f4f6;
+}
+
+.tab_btn.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+} */
+
+/* Content box */
+/* .HardwareViewPage_col2_Content {
+  padding: 16px;
+  border-radius: 12px;
+  background: #f9fafb;
+  min-height: 200px;
+} */
+
+
+
+
+
+/* Strong labels */
+/* .ProjectViewPage_col1 p strong {
+  color: #111827;
+  font-weight: 600;
+} */
+
+/* Divider */
+/* .ProjectViewPage_col1 hr {
+  margin: 18px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+} */
+
+/* Status badge */
+/* .status_badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 6px;
+}
+
+.status_active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status_inactive {
+  background: #fee2e2;
+  color: #991b1b;
+} */
+
+/* Responsive */
+/* @media (max-width: 900px) {
+  .ProjectViewPage_row1 {
+    flex-direction: column;
+  }
+
+  .ProjectViewPage_col1,
+  .ProjectViewPage_col2 {
+    width: 100%;
+  }
+}  */
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+.ProjectViewPage_Main {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f6f8; 
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #1f2937;
+}
+
+.ProjectViewPage_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.ProjectViewPage_row1 {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+
+.ProjectViewPage_col1 {
+  flex: 1 1 40%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProjectViewPage_col1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+}
+
+.ProjectViewPage_col1 h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.ProjectViewPage_col1 p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.ProjectViewPage_col1 p strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.ProjectViewPage_col1 hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+
+.status_badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status_active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status_inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+
+.ProjectViewPage_col2 {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ProjectViewPage_col2_FlexSection {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tab_btn {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  color: #374151;
+}
+
+.tab_btn:hover {
+  background: #f3f4f6;
+}
+
+.tab_btn.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+}
+
+
+.ProjectViewPage_col2_Content {
+  padding: 24px;
+  border-radius: 14px;
+  background: #ffffff;
+  min-height: 220px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProjectViewPage_col2_Content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+}
+
+.ProjectViewPage_col2_Content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.ProjectViewPage_col2_Content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+
+@media (max-width: 1024px) {
+  .ProjectViewPage_row1 {
+    flex-direction: column;
+  }
+
+  .ProjectViewPage_col1,
+  .ProjectViewPage_col2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProjectViewPage_col1 {
+    padding: 24px;
+  }
+
+  .ProjectViewPage_col2_Content {
+    padding: 20px;
+  }
+
+  .tab_btn {
+    font-size: 0.85rem;
+    padding: 10px 14px;
+  }
+} */
+
+
+
+
+/* =========================
+   GLOBAL STYLING
+========================= */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.ProjectViewPage_Main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* =========================
+   HEADER / TITLE
+========================= */
+.ProjectViewPage_Main h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* =========================
+   LAYOUT: TWO COLUMNS
+========================= */
+.ProjectViewPage_row1 {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+/* LEFT COLUMN — PROJECT DETAILS */
+.ProjectViewPage_col1 {
+  flex: 1 1 35%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProjectViewPage_col1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+.ProjectViewPage_col1 h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.ProjectViewPage_col1 p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.ProjectViewPage_col1 p strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.ProjectViewPage_col1 hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+
+/* STATUS BADGES */
+.status_badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status_active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status_inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* =========================
+   RIGHT COLUMN — TABS + CONTENT
+========================= */
+.ProjectViewPage_col2 {
+  flex: 1 1 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* TAB BUTTONS */
+.ProjectViewPage_col2_FlexSection {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tab_btn {
+  flex: 1;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: 1.5px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  color: #374151;
+  transition: all 0.25s ease;
+}
+
+.tab_btn:hover {
+  background: #f3f4f6;
+}
+
+.tab_btn.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+  box-shadow: 0 6px 16px rgba(37,99,235,0.35);
+}
+
+/* TAB CONTENT */
+.ProjectViewPage_col2_Content {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  min-height: 300px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProjectViewPage_col2_Content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.1);
+}
+
+.ProjectViewPage_col2_Content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.ProjectViewPage_col2_Content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .ProjectViewPage_row1 {
+    flex-direction: column;
+  }
+
+  .ProjectViewPage_col1,
+  .ProjectViewPage_col2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProjectViewPage_col1 {
+    padding: 24px;
+  }
+
+  .ProjectViewPage_col2_Content {
+    padding: 20px;
+  }
+
+  .tab_btn {
+    font-size: 0.85rem;
+    padding: 10px 14px;
+  }
+}

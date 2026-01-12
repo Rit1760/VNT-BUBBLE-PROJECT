@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main1_Notifications{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+.container1_Notification{
+    width: 100%;
+    margin: 0 auto;
+}
+.container1_Notification table{
+      border-collapse: collapse;
+      margin: 0 auto;
+      color: #fff;
+}
+.container1_Notification tr{
+      border-collapse: collapse;
+      font-family: 'Lato',sans-serif;
+      background: #ebeef1;
+      color: #fff;
+    }
+    .container1_Notification th{
+    padding: 9px 83px;
+      border-collapse: collapse;
+      font-family: 'Lato',sans-serif;
+      color: #383636;
+      font-weight: 400;
+}
+
+
+/* container2 start  */
+.container2_Notification{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.row1_Notification{
+  display: flex;
+  column-gap: 20px;
+}
+.col1_Notification{
+  width: 50%;
+}
+.col2_Notification{
+  width: 50%;
+  margin-left: 65%;
+}
+.col2_Notification input{
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+/* container2 end  */
+
+
+/* container3 start  */
+.container3_Notification{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.row2_Notification{
+  display: flex;
+  column-gap: 20px;
+}
+.col3_Notification{
+  width: 50%;
+}
+.col4_Notification{
+  width: 50%;
+}
+.col4_Notification span {
+  margin-left: 80%;
+  font-family: 'Lato',sans-serif;
+}
+.col4_Notification span:hover{
+  cursor: pointer;
+}
+
+/* container3 end  */
+

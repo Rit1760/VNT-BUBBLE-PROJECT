@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+
+
+
+@font-face {
+  font-family: 'Elms_Sans';
+  src: url('/Fonts/Elms_Sans/static/ElmsSans-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.main1_HardwarePopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+   font-family: 'Lato',sans-serif;
+}
+
+.container1_HardwarePopup {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 35px 40px;
+  width: 420px;
+  border: 1px solid #e0e0e0;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.05),
+    0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: popupFade 0.25s ease-in-out;
+   font-family: 'Lato',sans-serif;
+}
+
+.col1_HardwarePopup h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-bottom: 2px solid #ff6600;
+  padding-bottom: 10px;
+  font-family: 'Elms_Sans';
+}
+
+.col1_HardwarePopup form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+   font-family: 'Lato',sans-serif;
+}
+
+.col1_HardwarePopup input {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+   font-family: 'Lato',sans-serif;
+}
+
+.col1_HardwarePopup input:focus {
+  border-color: #0078ff;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgba(0, 120, 255, 0.3);
+}
+
+.col1_HardwarePopup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+  letter-spacing: 0.3px;
+   font-family: 'Lato',sans-serif;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 10px;
+   font-family: 'Lato',sans-serif;
+}
+
+.btn button {
+  flex: 1;
+  padding: 11px 0;
+  border: 1.5px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn button:first-child {
+  background-color: #fff;
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+.btn button:first-child:hover {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btn button:last-child {
+  background-color: #ff6600;
+  border-color: #ff6600;
+  color: #fff;
+}
+.btn button:last-child:hover {
+  background-color: #006ae0;
+}
+
+@keyframes popupFade {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} */
+
+/* Overlay */
+
+
+.main1_HardwarePopup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.container1_HardwarePopup {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+  width: 420px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    font-family: 'Lato',sans-serif;
+}
+.container1_HardwarePopup h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 700;
+    font-family: 'Lato',sans-serif;
+    color: #ff6600;
+}
+.hardware_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup Card */
+.hardware_popup {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  animation: popupFade 0.25s ease;
+    font-family: 'Lato',sans-serif;
+}
+
+/* Title */
+.hardware_popup h3 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 500;
+    font-family: 'Lato',sans-serif;
+}
+
+/* Form */
+.form_group {
+  display: flex;
+  flex-direction: column;
+    font-family: 'Lato',sans-serif;
+  margin-bottom: 14px;
+}
+
+.form_group label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+    font-family: 'Lato',sans-serif;
+}
+
+.form_group input,
+.form_group select {
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 14px;
+    font-family: 'Lato',sans-serif;
+}
+
+.form_group input:focus,
+.form_group select:focus {
+  outline: none;
+  border-color: #ff6600;
+}
+
+/* Actions */
+.popup_actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.cancel_btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.save_btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.save_btn:hover {
+  background: #e65c00;
+}
+
+/* Animation */
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

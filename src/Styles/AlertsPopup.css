@@ -1,0 +1,213 @@
+
+
+ @font-face {
+  font-family: 'Elms_Sans';
+  src: url('/Fonts/Elms_Sans/static/ElmsSans-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main1_AlertPopup {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: 'Elms_Sans', sans-serif;
+}
+
+.container1_AlertPopup {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 36px;
+  width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.08);
+  animation: popupFade 0.3s ease;
+}
+
+.col1_AlertPopup h3 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #111;
+  position: relative;
+}
+
+.col1_AlertPopup h3::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #ff6600;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.col1_AlertPopup h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+  border-left: 4px solid #ff6600;
+  padding-left: 10px;
+}
+
+.col1_AlertPopup form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Grid for conditions */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* Single input section */
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Labels ===== */
+.col1_AlertPopup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+
+/* ===== Inputs ===== */
+.col1_AlertPopup input {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1.6px solid #d0d0d0;
+  font-size: 0.95rem;
+  background: #fafafa;
+  transition: all 0.25s ease;
+}
+
+.col1_AlertPopup input:focus {
+  outline: none;
+  border-color: #ff6600;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.15);
+}
+
+/* ===== Buttons ===== */
+.btnAT {
+  display: flex;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.btnAT button {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Cancel */
+.btn-cancel {
+  background: #fff;
+  border: 1.6px solid #e74c3c;
+  color: #e74c3c;
+}
+
+
+.btn-cancel:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* Save */
+.btn-save {
+  background: linear-gradient(135deg, #ff6600, #ff8533);
+  border: none;
+  color: #fff;
+}
+
+.btn-save:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(255, 102, 0, 0.35);
+}
+
+/* ===== Animation ===== */
+@keyframes popupFade {
+  from {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.Conditions_Popup {
+  width: 100%;
+  margin-top: 12px;    
+}
+
+.Conditions_Form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;             
+}
+
+.Form_Field {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+}
+
+
+.col1_AlertPopup form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+/* .Conditions_Popup {
+  padding: 14px;
+  border-radius: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+} */
+
+.Form_Field label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.Form_Field input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+}
+
+.Form_Field input:focus {
+  border-color: #4f46e5;
+}

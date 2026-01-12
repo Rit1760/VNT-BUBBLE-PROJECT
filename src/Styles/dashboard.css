@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Elms_Sans';
+  src: url('/Fonts/Elms_Sans.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main1_dashboard{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container1_dashboard{
+    width: 100%;
+}
+
+.row1_dashboard{
+    display: block;
+}
+
+.col1_dashboard{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.col1_dashboard h3{
+      font-family: 'Elms_Sans', sans-serif;
+     font-size: 52px;
+     padding-top: 40px;
+}

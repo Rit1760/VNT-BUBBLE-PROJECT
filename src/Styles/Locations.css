@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main1_Locations{
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.projects_list_Locations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;
+    font-family: 'Lato',sans-serif;
+}
+
+.project_item_Locations {
+  background: #ffffff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+    font-family: 'Lato',sans-serif;
+}
+
+.project_item_Locations:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project_item_Locations h3 {
+  color: #0078ff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+    font-family: 'Lato',sans-serif;
+}
+
+.project_item_Locations p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  word-break: break-word;
+  font-family: 'Lato',sans-serif;
+}
+
+/* container1 hardware start  */
+.container1_Locations{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1390px;
+}
+
+.row1_Locations{
+  display: block;
+}
+
+/* .col1_Locations button{
+  margin-left: 83%;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  font-weight: 400;
+}
+.col1_Locations button:hover{
+  cursor: pointer;
+} */
+/* container1 hardware end  */
+
+.project_footer_Locations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.project_footer_Locations p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.active_btn, .inactive_btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+
+.active_btn {
+  background-color: #28a745;
+  box-shadow: 1px 1px 8px #28a745;
+}
+
+.inactive_btn {
+  background-color: #dc3545;
+   box-shadow: 1px 1px 8px  #dc3545;
+} 
+
+
+
+
+
+
+.col1_Locations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Search input */
+.col1_Locations input {
+  width: 260px;
+  padding: 8px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.col1_Locations input:focus {
+  border-color: #ff6600;
+}
+
+/* Create button */
+.col1_Locations button {
+  padding: 10px 22px;
+  border-radius: 10px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.col1_Locations button:hover {
+  background: #e65c00;
+}

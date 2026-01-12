@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main1_Register {
+  width: 100%;
+  height: 100vh;
+  background: url("/Images/register.png") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.overlay_Register {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.container1_Register {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+.col1_Register h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 6px rgba(255, 102, 0, 0.4);
+}
+
+button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #e65c00;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .container1_Register {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .col1_Register h2 {
+    font-size: 22px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}

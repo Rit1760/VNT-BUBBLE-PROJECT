@@ -1,0 +1,171 @@
+/* Main wrapper */
+.UsersViewPage_Main {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Center container */
+.UsersViewPage_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Row */
+.UsersViewPage_row1 {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* LEFT COLUMN — 40% */
+.UsersViewPage_col1 {
+  width: 40%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+/* RIGHT COLUMN — 60% */
+/* .UsersViewPage_col2 {
+  width: 60%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+} */
+
+/* Heading */
+/* .UsersViewPage_col1 h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 10px;
+  text-align: center;
+} */
+
+/* Label text */
+/* .UsersViewPage_col1 p {
+  font-size: 15px;
+  color: #374151;
+  margin: 6px 0;
+  line-height: 1.5;
+} */
+
+/* Strong labels */
+/* .UsersViewPage_col1 p strong {
+  color: #111827;
+  font-weight: 600;
+} */
+
+/* Divider */
+/* .UsersViewPage_col1 hr {
+  margin: 18px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+} */
+
+
+
+
+
+
+
+
+
+
+.UsersViewPage_col2_FlexSection {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.tab_btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tab_btn:hover {
+  background: #f3f4f6;
+}
+
+.tab_btn.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+}
+
+/* Content box */
+.UsersViewPage_col2_Content {
+  padding: 16px;
+  border-radius: 12px;
+  background: #f9fafb;
+  min-height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Status badge */
+.status_badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 6px;
+}
+
+.status_active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status_inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .UsersViewPage_row1 {
+    flex-direction: column;
+  }
+
+  .UsersViewPage_col1,
+  .UsersViewPage_col2 {
+    width: 100%;
+  }
+}

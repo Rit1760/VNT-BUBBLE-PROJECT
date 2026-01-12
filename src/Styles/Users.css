@@ -1,0 +1,378 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.projects_list_Users {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;
+  font-family: 'Lato',sans-serif;
+}
+
+
+.project_item_Users {
+  background: #ffffff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  font-family: 'Lato',sans-serif;
+}
+
+.project_item_Users:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project_item_Users h3 {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-family: 'Lato',sans-serif;
+}
+
+.project_item_Users p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  word-break: break-word;
+  font-family: 'Lato',sans-serif;
+}
+
+/* container1 hardware start  */
+
+.container1_Users{
+    width: 100%;
+    margin: 30px auto 0;
+    max-width: 1388px;
+}
+
+.row1_Users{
+  display: block;
+}
+
+.col1_Users button{
+  margin-left: 83%;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  font-weight: 400;
+}
+
+.col1_Users button:hover{
+  cursor: pointer;
+}
+
+/* container1 hardware end  */
+
+.project_footer_Users {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.project_footer_Users p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.active_btn, .inactive_btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+
+.active_btn {
+  background-color: #28a745;
+  box-shadow: 1px 1px 8px #28a745;
+}
+
+.inactive_btn {
+  background-color: #dc3545;
+   box-shadow: 1px 1px 8px  #dc3545;
+} 
+
+
+
+/* 🔥 INPUT + BUTTON SAME LINE */
+.col1_Users {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Search input */
+.col1_Users input {
+  width: 260px;
+  padding: 8px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+
+.col1_Users input:focus {
+  border-color: #ff6600;
+}
+
+/* Create button */
+.col1_Users button {
+  padding: 10px 22px;
+  border-radius: 10px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.col1_Users button:hover {
+  background: #e65c00;
+}
+
+
+
+/* footer Users start  */
+/* Container */
+.Users_end_buttons_container {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Row */
+.Users_end_buttons_row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Columns */
+.Users_end_buttons_col,
+.Users_end_buttons_col2,
+.Users_end_buttons_col3,
+.Users_end_buttons_col4 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Common Button Styles */
+.Users_end_buttons_row button {
+  /* min-width: 110px; */
+  padding: 10px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+/* Edit Button */
+.Users_edit_button {
+  background-color: #2563eb; /* blue */
+  color: #fff;
+}
+
+.Users_edit_button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* Delete Button */
+.Users_delete_button {
+  background-color: #dc2626; /* red */
+  color: #fff;
+}
+
+.Users_delete_button:hover {
+  background-color: #991b1b;
+  transform: translateY(-2px);
+}
+
+/* View Button */
+.Users_view_button {
+  background-color: #059669; /* green */
+  color: #fff;
+}
+
+.Users_view_button:hover {
+  background-color: #047857;
+  transform: translateY(-2px);
+}
+
+/* Clone Button */
+.Users_clone_button {
+  background-color: #6b7280; /* gray */
+  color: #fff;
+}
+
+.Users_clone_button:hover {
+  background-color: #374151;
+  transform: translateY(-2px);
+}
+
+
+/* Active click effect */
+.Users_end_buttons_row button:active {
+  transform: scale(0.96);
+}
+/* footer Users end  */
+
+
+
+
+/* Overlay */
+.delete_modal_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 70px;
+}
+
+/* Modal Box */
+.delete_modal {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  animation: slideDown 0.25s ease;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+.delete_modal_header {
+  padding: 16px 20px;
+  background: #dc2626;
+  color: #fff;
+}
+
+.delete_modal_header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Body */
+.delete_modal_body {
+  padding: 20px;
+  text-align: center;
+}
+
+.delete_modal_body p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.delete_modal_body label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.delete_modal_body input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+}
+
+.delete_modal_body input:focus {
+  border-color: #dc2626;
+}
+
+/* Footer */
+.delete_modal_footer {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px;
+  background: #f9fafb;
+}
+
+.delete_cancel_btn {
+  flex: 1;
+  padding: 10px;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete_confirm_btn {
+  flex: 1;
+  padding: 10px;
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete_confirm_btn:disabled {
+  background: #fca5a5;
+  cursor: not-allowed;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.Users_avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6600, #ff944d);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.35);
+}

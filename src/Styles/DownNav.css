@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Elms_Sans';
+  src: url('/Fonts/Elms_Sans.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main1_DownNav{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container1_DownNav{
+    width: 100%;
+}
+
+
+.col1_DownNav{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.col1_DownNav ul{
+  display: block;
+  padding-top: 40px;
+}
+
+.col1_DownNav li{
+  list-style-type: none;
+  padding: 12px 0;
+  font-family: 'Elms_Sans', sans-serif;
+}
+
+/* Link Base */
+ .col1_DownNav a{
+  position: relative;
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  padding-bottom: 6px;
+  transition: color 0.25s ease;
+}
+
+.col1_DownNav a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff6600;
+  transition: width 0.35s ease;
+}
+
+.col1_DownNav a:hover{
+  color: #ff6600;
+  transform: translateX(20px);
+  transition-duration: 1.9s;
+}
+
+.col1_DownNav a:hover::after{
+  width: 100%;
+} 
+
+

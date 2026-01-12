@@ -1,66 +1,50 @@
+
+import Link from "next/link";
+import "../Styles/Home.css"
 import Image from "next/image";
-import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+<>
+<div className="main1_Homemqtt">
+  <div className="contaniner1_Homemqtt">
+    <div className="row1_Homemqtt">
+      <div className="col1_Homemqtt">
+ <h2>VNT Intelligent Connectivity for a<span style={{color:"#ff6600",borderBottom:"6px solid #ff6600"}}> Smarter Future </span></h2>
+<p>
+At VNT, we build reliable and scalable MQTT-based solutions that enable seamless real-time communication between devices. 
+Our platform empowers businesses to connect, monitor, and control IoT systems with unmatched speed, security, and efficiency.
+</p>
+      </div>
     </div>
+  </div>
+  
+  <div className="container2_Homemqtt">
+    <div className="row2_Homemqtt">
+      <div className="col2_Homemqtt">
+<Image src="/Images/Homemqtt1.png" width={400} height={300} alt="Homemqtt1" />
+      </div>
+      <div className="col3_Homemqtt">
+<Image src="/Images/Homemqtt3.jpg" width={400} height={300} alt="Homemqtt3" />
+      </div>
+    </div>
+  </div>
+  <div className="container33_Homemqtt">
+    <div className="row33_Homemqtt1">
+      <div className="col11_Homemqtt">
+        <h2 className="hero-title">Continue to<span style={{color:"#ff6600"}}> VNT</span> please log in or register to proceed</h2>
+      </div>
+    </div>
+    <div className="row33_Homemqtt">
+      <div className="col22_Homemqtt">
+        <Link href="/Register">Register</Link>
+      </div>
+      <div className="col33_Homemqtt">
+<Link href="/Login">Login</Link>
+      </div>
+    </div>
+  </div>
+</div>
+</>
   );
 }

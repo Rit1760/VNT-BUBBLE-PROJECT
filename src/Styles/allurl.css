@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Elms_Sans';
+  src: url('/Fonts/Elms_Sans/static/ElmsSans-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Elms_Sans';
+}

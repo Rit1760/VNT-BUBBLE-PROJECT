@@ -1,0 +1,391 @@
+/* @font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Elms_Sans';
+  src: url('/Fonts/Elms_Sans/static/ElmsSans-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.main1_ProjectPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.container1_ProjectPopup {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 35px 40px;
+  width: 420px;
+  border: 1px solid #e0e0e0;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.05),
+    0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: popupFade 0.25s ease-in-out;
+}
+
+
+.col1_ProjectPopup h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-bottom: 2px solid #ff6600;
+  padding-bottom: 10px;  
+ font-family: 'Elms_Sans';
+}
+
+.col1_ProjectPopup form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+    font-family: 'Elms_Sans';
+}
+
+.col1_ProjectPopup input {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+    font-family: 'Lato',sans-serif;
+}
+
+.col1_ProjectPopup input:focus {
+  border-color: #0078ff;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgba(0, 120, 255, 0.3);
+}
+
+.col1_ProjectPopup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+  letter-spacing: 0.3px;
+}
+
+.btnPP {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+   font-family: 'Elms_Sans';
+  gap: 10px;
+}
+
+.btnPP button {
+  flex: 1;
+  padding: 11px 0;
+  border: 1.5px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+    font-family: 'Lato',sans-serif;
+  transition: all 0.3s ease;
+}
+
+.btnPP button:first-child {
+  background-color: #fff;
+  border-color: #e74c3c;
+  color: hsl(6, 78%, 57%);
+}
+
+.btnPP button:first-child:hover {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btnPP button:last-child {
+  background-color: #ff6600;
+  border-color: #ff6600;
+  color: #fff;
+}
+.btnPP button:last-child:hover {
+  background-color: #006ae0;
+}
+
+
+@keyframes popupFade {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+ */
+
+
+ /* =========================
+   FONTS
+========================= */
+
+
+
+/* =========================
+   GLOBAL RESET
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* =========================
+   FONTS
+========================= */
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Elms_Sans';
+  src: url('/Fonts/Elms_Sans/static/ElmsSans-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+.main1_ProjectPopup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  backdrop-filter: blur(6px);
+}
+
+/* =========================
+   POPUP
+========================= */
+.container1_ProjectPopup {
+  width: 440px;
+  background: #ffffff;
+  padding: 32px 36px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: popupScale 0.25s ease;
+}
+
+/* =========================
+   HEADER
+========================= */
+.col1_ProjectPopup h3 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 1.55rem;
+  font-family: 'Elms_Sans';
+  color: #1f2937;
+  position: relative;
+}
+
+.col1_ProjectPopup h3::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #ff6600;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* =========================
+   FORM
+========================= */
+.col1_ProjectPopup form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: 'Elms_Sans';
+}
+
+/* =========================
+   LABEL
+========================= */
+.col1_ProjectPopup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* =========================
+   INPUT & SELECT (IMPORTANT)
+========================= */
+.col1_ProjectPopup input,
+.col1_ProjectPopup select {
+  width: 100%;
+  height: 44px;                 /* 🔥 SAME HEIGHT */
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1.6px solid #d1d5db;
+  background: #f9fafb;
+  font-size: 0.95rem;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.25s ease;
+}
+
+/* Placeholder */
+.col1_ProjectPopup input::placeholder {
+  color: #9ca3af;
+}
+
+/* Focus */
+.col1_ProjectPopup input:focus,
+.col1_ProjectPopup select:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #ff6600;
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.18);
+}
+
+/* =========================
+   SELECT ARROW FIX
+========================= */
+.col1_ProjectPopup select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9l6 6 6-6' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btnPP {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.btnPP button {
+  flex: 1;
+  height: 44px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.25s ease;
+}
+
+/* Cancel */
+.btnPP button:first-child {
+  background: #ffffff;
+  color: #dc2626;
+  border: 1.5px solid #dc2626;
+}
+
+.btnPP button:first-child:hover {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+/* Save */
+.btnPP button:last-child {
+  background: linear-gradient(135deg, #ff6600, #ff8533);
+  color: #ffffff;
+}
+
+.btnPP button:last-child:hover {
+  background: linear-gradient(135deg, #e65c00, #ff6600);
+  transform: translateY(-1px);
+}
+
+
+@keyframes popupScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container1_ProjectPopup {
+    width: 92%;
+    padding: 26px 22px;
+  }
+}
+
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon input {
+  width: 100%;
+  padding: 12px 42px 12px 14px;
+  border-radius: 10px;
+  border: 1.6px solid #d1d5db;
+  background: #f9fafb;
+  font-size: 0.95rem;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.25s ease;
+}
+
+.inputWithIcon input:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #ff6600;
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.15);
+}
+
+.inputIcon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.inputIcon:hover {
+  color: #ff6600;
+}
+

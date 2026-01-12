@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main1_Homemqtt{
+width: 100%;
+margin: 0 auto;
+}
+
+/* container1 start  */
+
+.contaniner1_Homemqtt{
+width: 100%;
+margin: 0 auto;
+margin-top: 150px;
+}
+
+.col1_Homemqtt{
+width: 50%;
+margin: 0 auto;
+}
+
+.col1_Homemqtt h2{
+  font-family: 'Lato', sans-serif;
+text-align: center;
+font-size: 52px;
+}
+
+.col1_Homemqtt p{
+  font-family: 'Lato', sans-serif;
+text-align: center;
+font-size: 26px;
+line-height: 1.4em;
+color: #817e7e;
+}
+
+/* container1 end  */
+
+
+/* container2 start  */
+
+.container2_Homemqtt{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.row2_Homemqtt{
+ display: flex;
+ column-gap: 20px;
+}
+
+.col2_Homemqtt{
+width: 50%;
+}
+
+.col3_Homemqtt{
+width: 50%;
+}
+
+.col2_Homemqtt img{
+     margin-left: 131px;
+}
+
+.col3_Homemqtt img{
+    margin-left: 30px;
+}
+
+.row3_Homemqtt{
+    margin-top: 50px;
+}
+
+.row3_Homemqtt img{
+    margin-left: 30%;
+}
+
+/* container2 end  */
+
+
+/* container33 start  */
+.container33_Homemqtt{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding-bottom: 50px;
+}
+
+.col11_Homemqtt{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.col11_Homemqtt h2{
+    text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.row33_Homemqtt{
+    display: flex;
+    margin-top: 80px;
+}
+
+.col22_Homemqtt{
+    width: 20%;
+    margin-left: 35%;
+}
+
+.col33_Homemqtt{
+    width: 20%;
+}
+
+.col22_Homemqtt a{
+/* border: 1px solid; */
+border-radius: 10px; 
+padding: 10px 30px;
+text-decoration: none;
+  font-family: 'Lato', sans-serif;
+color: #615f5f; 
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.col33_Homemqtt a{
+padding: 10px 30px;
+/* border: 1px solid;  */
+border-radius: 10px; 
+text-decoration: none;
+  font-family: 'Lato', sans-serif;
+color: #615f5f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* container33 end  */

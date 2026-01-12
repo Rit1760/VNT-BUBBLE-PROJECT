@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main1_Anylitics{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background: #f4f1f1;
+    padding: 20px 0px;
+}
+
+/* container1 start  */
+.container1_Anylitics{
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+}
+.row1_Anylitics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col1_Anylitics{
+    width: 50%;
+}
+
+.col1_Anylitics h3{
+       font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.col2_Anylitics{
+    width: 50%;
+}
+
+/* container1 end  */
+
+
+/* container2 start  */
+
+.container2_Anylitics{
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.row2_Anylitics{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.col3_Anylitics{
+width: 12%;
+}
+
+.col4_Anylitics{
+    width: 12%;
+}
+
+.col5_Anylitics{
+    width: 12%;
+}
+
+.col6_Anylitics{
+    width: 12%;
+}
+
+.col7_Anylitics{
+    width: 50%;
+}
+
+.col3_Anylitics h3{
+ text-align: center;
+     font-family: 'Lato',sans-serif;
+         margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+        color: #747474;
+}
+
+.col4_Anylitics h3{
+text-align: center;
+    font-family: 'Lato',sans-serif;
+        margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+        color: #747474;
+}
+
+.col5_Anylitics h3{
+text-align: center;
+    font-family: 'Lato',sans-serif;
+        margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+        color: #747474;
+}
+
+.col6_Anylitics h3{
+text-align: center;
+    font-family: 'Lato',sans-serif;
+        margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+        color: #747474;
+}
+
+.butn{
+    margin-left: 70%;
+        font-family: 'Lato',sans-serif;
+        border: none;
+        color: #747474;
+        background: none;
+        font-weight: 400;
+}
+
+.butn:hover{
+    cursor: pointer;
+}
+
+/* container2 end  */

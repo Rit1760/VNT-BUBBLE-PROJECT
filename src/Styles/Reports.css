@@ -1,0 +1,443 @@
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/Fonts/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.projects_list_Reports {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px;
+  margin-top: 30px;
+    font-family: 'Lato',sans-serif;
+  width: 100%;
+}
+
+
+
+.project_item_Reports {
+  background: #ffffff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+    font-family: 'Lato',sans-serif;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.project_item_Reports:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project_item_Reports h3 {
+  color: #0078ff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+    font-family: 'Lato',sans-serif;
+}
+
+.project_item_Reports p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  word-break: break-word;
+    font-family: 'Lato',sans-serif;
+}
+
+
+/* container2 start  */
+
+.container2_Report{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.row2_Report{
+  display: flex;
+  column-gap: 20px;
+}
+.col2_Report{
+  width: 50%;
+}
+.col3_Report{
+  width: 50%;
+}
+.col3_Report input{
+  margin-left: 67%;
+}
+
+
+
+.container2_Report{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.row2_Report{
+  display: flex;
+  column-gap: 20px;
+}
+.col2_Report{
+  width: 50%;
+}
+.col3_Report{
+  width: 50%;
+  margin-left: 15%;
+}
+.col3_Report input{
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+/* container2 end  */
+
+
+/* container4 start  */
+.container4_Report{
+    width: 100%;
+    margin: 0 auto;
+}
+.container4_Report table{
+      border-collapse: collapse;
+      margin: 0 auto;
+      color: #fff;
+}
+.container4_Report tr{
+      border-collapse: collapse;
+      font-family: 'Lato',sans-serif;
+      background: #ebeef1;
+      color: #fff;
+    }
+    .container4_Report th{
+    padding: 9px 72px;
+      border-collapse: collapse;
+      font-family: 'Lato',sans-serif;
+      color: #383636;
+      font-weight: 400;
+}
+
+
+/* container4 end  */
+
+/* container3 start  */
+
+.container3_Report{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.row3_Report{
+  display: flex;
+  column-gap: 20px;
+}
+.col4_Report{
+  width: 50%;
+}
+.col5_Report{
+  width: 50%;
+}
+.col5_Report span {
+  margin-left: 80%;
+  font-family: 'Lato',sans-serif;
+}
+.col5_Report span:hover{
+  cursor: pointer;
+}
+/* container3 end  */
+
+
+
+/* container1 hardware start  */
+.container1_Reports{
+  width: 100%;
+  margin: 0 auto;
+}
+.row1_Reports{
+  display: block;
+}
+.col1_Reports button{
+  margin-left: 83%;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  font-weight: 400;
+}
+.col1_Reports button:hover{
+  cursor: pointer;
+}
+/* container1 hardware end  */
+
+
+
+
+
+.project_footer_Reports {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.project_footer_Reports p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.active_btn, .inactive_btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+
+.active_btn {
+  background-color: #28a745;
+  box-shadow: 1px 1px 8px #28a745;
+}
+
+.inactive_btn {
+  background-color: #dc3545;
+   box-shadow: 1px 1px 8px  #dc3545;
+} 
+
+
+
+
+.Reports_avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6600, #ff944d);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.35);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer Reports start  */
+/* Container */
+.Reports_end_buttons_container {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Row */
+.Reports_end_buttons_row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Columns */
+.Reports_end_buttons_col,
+.Reports_end_buttons_col2,
+.Reports_end_buttons_col3,
+.Reports_end_buttons_col4 {
+  display: flex;
+  justify-content: center;
+}
+
+.Reports_end_buttons_row button {
+  padding: 10px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+/* Edit Button */
+.Reports_edit_button {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.Reports_edit_button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* Delete Button */
+.Reports_delete_button {
+  background-color: #dc2626; /* red */
+  color: #fff;
+}
+
+.Reports_delete_button:hover {
+  background-color: #991b1b;
+  transform: translateY(-2px);
+}
+
+/* View Button */
+.Reports_view_button {
+  background-color: #059669; /* green */
+  color: #fff;
+}
+
+.Reports_view_button:hover {
+  background-color: #047857;
+  transform: translateY(-2px);
+}
+
+/* Clone Button */
+.Reports_clone_button {
+  background-color: #6b7280; 
+  color: #fff;
+}
+
+.Reports_clone_button:hover {
+  background-color: #374151;
+  transform: translateY(-2px);
+}
+
+
+/* Active click effect */
+.Reports_end_buttons_row button:active {
+  transform: scale(0.96);
+}
+/* footer hardware end  */
+
+
+
+
+
+
+
+/* Overlay */
+.delete_modal_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 70px;
+}
+
+/* Modal Box */
+.delete_modal {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  animation: slideDown 0.25s ease;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+.delete_modal_header {
+  padding: 16px 20px;
+  background: #dc2626;
+  color: #fff;
+}
+
+.delete_modal_header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Body */
+.delete_modal_body {
+  padding: 20px;
+  text-align: center;
+}
+
+.delete_modal_body p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.delete_modal_body label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.delete_modal_body input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+}
+
+.delete_modal_body input:focus {
+  border-color: #dc2626;
+}
+
+/* Footer */
+.delete_modal_footer {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px;
+  background: #f9fafb;
+}
+
+.delete_cancel_btn {
+  flex: 1;
+  padding: 10px;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.delete_confirm_btn {
+  flex: 1;
+  padding: 10px;
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.delete_confirm_btn:disabled {
+  background: #fca5a5;
+  cursor: not-allowed;
+}
