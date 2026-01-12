@@ -142,61 +142,6 @@ const confirmDeleteProject = () => {
               ) : (
 
                 filteredProjects.map((p, i) => (
-//                   <div key={i} className="project_item">
-
-
-//                     <div className="clone_Hardware_item" style={{ display: "flex", alignItems: "center" }}>
-//                       <div className="col1_clone_Hardware" style={{ width: "30%" }}>
-
-//                         <span className="hardware_avatar">
-//   {p.name?.charAt(0).toUpperCase()}
-// </span>
-//                       </div>
-
-//                       <div className="col2_clone_Hardware" style={{ width: "50%" }}>
-//   <h3>
-//     {p.name.length > 5 ? p.name.slice(0, 5) + "..." : p.name}
-//   </h3>
-// </div>
-//                     </div>
-
-//                     <div className="clone_Prooject_item2" style={{ display: "flex", alignItems: "center" }}>
-//                       <div className="col3_clone_Project" style={{ width: "50%" }}>
-//                         <p>{p.modelNo}</p>
-//                       </div>
-//                       <div className="col4_clone_Project" style={{ width: "50%" }}>
-//                         <p>{p.type}</p>
-//                       </div>
-//                     </div>
-
-
-              
-//                     <div className="project_footer_Project">
-//                       <p><strong>Date:</strong> {p.date}</p>
-//                       <button
-//                         onClick={() => handleToggleActive(i)}
-//                         className={p.isActive ? "active_btn" : "inactive_btn"}
-//                       >
-//                         {p.isActive ? "Active" : "Inactive"}
-//                       </button>
-//                     </div>
-//                     <div className="Hardware_end_buttons_container" >
-//                     <div className="Hardware_end_buttons_row">
-//                       <div className="Hardware_end_buttons_col">
-//                         <button className="Hardware_edit_button"   onClick={() => handleEditProject(i)}>Edit</button>
-//                       </div>
-//                       <div className="Hardware_end_buttons_col2">
-//                         <button className="Hardware_delete_button"    onClick={() => handleDeleteClick(i)}>Delete</button>
-//                       </div>
-//                       <div className="Hardware_end_buttons_col3">
-//                         <button className="Hardware_view_button" onClick={() => router.push(`/Hardware/${p.id}`)}>View</button>
-//                       </div>
-//                       <div className="Hardware_end_buttons_col4">
-//                         <button className="Hardware_clone_button"  onClick={() => handleCloneProject(i)}>Clone</button>
-//                       </div>
-//                       </div>
-//                       </div>
-//                   </div>
 <div key={i} className="project_item">
 
   {/* Always visible content */}

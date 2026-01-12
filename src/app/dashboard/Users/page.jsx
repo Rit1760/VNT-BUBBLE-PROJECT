@@ -132,14 +132,11 @@ const confirmDeleteProjectU = () => {
 
                           <div className="clone_Users_item" style={{display:"flex" , alignItems:"center"}}>
         <div className="col1_clone_Users" style={{width:"30%"}}>
-          {/* <span style={{border:"1px solid #a8a2a2ff", width:"30px", height:"30px", borderRadius:"50%", padding:"20px 30px"}}></span> */}
                                   <span className="Users_avatar">
   {p.name?.charAt(0).toUpperCase()}
 </span>
         </div>
-                {/* <div className="col2_clone_Users"  style={{width:"50%"}} >
-      <h3>{p.name}</h3>
-        </div> */}
+
                                               <div className="col2_clone_Users" style={{ width: "50%" }}>
   <h3>
     {p.name.length > 5 ? p.name.slice(0, 5) + "..." : p.name}

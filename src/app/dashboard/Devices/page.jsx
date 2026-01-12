@@ -37,7 +37,6 @@ const [showDeletePopupD, setShowDeletePopupD] = useState(false);
 
 
 
-
     
   const filteredProjectsD = projectD.filter((p) =>
   p.name11111.toLowerCase().includes(search.toLowerCase())
@@ -47,9 +46,7 @@ const [showDeletePopupD, setShowDeletePopupD] = useState(false);
     const clickData = () => {
         setActiveData(!activeData)
     }
-//   const filteredProjects1 = projectD.filter((p) =>
-//   p.name.toLowerCase().includes(search.toLowerCase())
-// );
+
 
 const handleEditProjectD = (index) => {
   setEditIndexD(index);
@@ -144,6 +141,9 @@ const handleCloneProjectD = (index) => {
 />
 
 
+
+
+
                             <button onClick={() => setShowPopupD(true)}>
                                 + Add Device
                             </button>
@@ -151,7 +151,7 @@ const handleCloneProjectD = (index) => {
 
                         <div className="projects_list_Devices">
                             {projectD.length === 0 ? (
-                                <p>No projects yet</p>
+                                <p>No Devices yet</p>
                             ) : (
                               filteredProjectsD.map((p, i) => (
                                     <div key={i} className="project_item_Devices">

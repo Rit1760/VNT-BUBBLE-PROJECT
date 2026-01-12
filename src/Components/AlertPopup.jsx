@@ -119,12 +119,6 @@ export default function AlertPopup({ onSave, onClose }) {
 
     <div className="Form_Field">
       <label>Value</label>
-      {/* <input
-        type="text"
-        value={Valuee}
-        placeholder="Value..."
-        onChange={(e) => setValuee(e.target.value)}
-      /> */}
                                      <input
   type="text"
   value={Valuee}
