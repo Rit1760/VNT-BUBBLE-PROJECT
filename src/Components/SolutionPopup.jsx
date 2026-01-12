@@ -5,7 +5,7 @@ import "../Styles/SolutionPopup.css";
 
 export default function SolutionPopup({ onSave, onClose }) {
   const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
+  // const [mail, setMail] = useState("");
   const [description, setDescription] = useState("");
   const [mobile, setMobile] = useState("");
 
@@ -13,24 +13,59 @@ export default function SolutionPopup({ onSave, onClose }) {
 const [outputCount, setOutputCount] = useState(0);
 
 
+const [mail, setMail] = useState("")
+const [error, setError] = useState("")
+
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    if (!name.trim() || !mail.trim()  || !description.trim() ) {
-      return alert("Please fill all the fields");
-    }
+  //   if (!name.trim() || !mail.trim()  || !description.trim() ) {
+  //     return alert("Please fill all the fields");
+  //   }
 
 
-    const newProject11 = { name,  description };
+  //   const newProject11 = { name,  description };
 
-    onSave(newProject11);
+  //   onSave(newProject11);
 
-    setName("");
-    setMail("");
-    setDescription("");
-    // setMobile("");
-  };
+  //   setName("");
+  //   setMail("");
+  //   setDescription("");
+  // };
+
+
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  // Empty check
+  if (!name.trim() || !mail.trim() || !description.trim()) {
+    alert("Please fill all the fields");
+    return;
+  }
+
+  if (!validateEmail(mail)) {
+    alert("Please enter a valid email");
+    return;
+  }
+
+  const newProject11 = { name, mail, description };
+
+  onSave(newProject11);
+
+  setName("");
+  setMail("");
+  setDescription("");
+  setError("");
+};
+
+
+const validateEmail = (email) => {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return regex.test(email)
+}
+
 
   return (
     <div className="main1_SolutionPopup">
@@ -49,7 +84,7 @@ const [outputCount, setOutputCount] = useState(0);
                   onChange={(e) => setName(e.target.value.toUpperCase())}
                 />
               </div>
-              <div>
+              {/* <div>
                 <label htmlFor="Mail">Mail</label>
                 <input
                   type="email"
@@ -58,7 +93,27 @@ const [outputCount, setOutputCount] = useState(0);
                   onChange={(e) => setMail(e.target.value)}
                   required
                 />
-              </div>
+              </div> */}
+
+<input
+  type="email"
+  value={mail}
+  placeholder="Mail..."
+  onChange={(e) => {
+    setMail(e.target.value)
+
+    if (!validateEmail(e.target.value)) {
+      setError("Please enter a valid email")
+    } else {
+      setError("")
+    }
+  }}
+  required
+/>
+{error && <p style={{ color: "red" }}>{error}</p>}
+
+
+
               <div>
                 <label htmlFor="Description">Description</label>
                 <input

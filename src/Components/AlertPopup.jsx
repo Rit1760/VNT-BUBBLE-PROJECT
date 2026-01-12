@@ -13,12 +13,25 @@ export default function AlertPopup({ onSave, onClose }) {
     const [description, setDescription] = useState("");
     const [Solution, setSolution] = useState("");
     const [Devices, setDevices] = useState("");
-    const [mobile, setMobile] = useState("");
+    // const [mobile, setMobile] = useState("");
     const [ConditionsType, setConditionsType] = useState("");
     const [Conditions, setConditions] = useState("");
     const [Valuee, setValuee] = useState("");
     const [Rule, setRule] = useState("");
     const [EnterValue, setEnterValue] = useState("");
+
+
+
+      const [mobile, setMobile] = useState("")
+  const [mobileError, setMobileError] = useState("")
+
+
+
+  const validateMobile = (number) => {
+    const regex = /^[6-9]\d{9}$/
+    return regex.test(number)
+  }
+
 
 
     const handleSubmitAT = (e) => {
@@ -146,9 +159,9 @@ export default function AlertPopup({ onSave, onClose }) {
                                 </div>
 
                                 <div>
-                                    <label htmlFor="mobile" >Mobile</label>
+                                    {/* <label htmlFor="mobile" >Mobile</label> */}
                                     {/* <input type="text" value={mobile} placeholder="Mobile..." onChange={(e) => setMobile(e.target.value)}/> */}
-                               <input
+                               {/* <input
   type="text"
   value={mobile}
   onChange={(e) => {
@@ -156,7 +169,29 @@ export default function AlertPopup({ onSave, onClose }) {
     setMobile(onlyNumbers);
   }}
   placeholder="Mobile..."
-/>
+/> */}
+
+
+              <div>
+                <label>Mobile</label>
+                <input
+                  type="text"
+                  value={mobile}
+                  placeholder="Mobile..."
+                  maxLength={10}
+                  onChange={(e) => {
+                    const onlyNumbers = e.target.value.replace(/[^0-9]/g, "")
+                    setMobile(onlyNumbers)
+                    setMobileError(
+                      validateMobile(onlyNumbers)
+                        ? ""
+                        : "Enter valid 10-digit Indian mobile number"
+                    )
+                  }}
+                />
+                {mobileError && <p style={{ color: "red" }}>{mobileError}</p>}
+              </div>
+
                                 </div>
                                 <div className="btnAT">
                                     <button type="button" onClick={onClose}>Cancel</button>

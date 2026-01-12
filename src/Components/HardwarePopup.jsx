@@ -1,5 +1,3 @@
-
-
 'use client';
 
 import { useState } from "react";
@@ -81,7 +79,6 @@ export default function HardwarePopup({ onClose, onSave }) {
             />
           </div>
 
-          
           <div className="form_group">
             <label>Model No</label>
 <input

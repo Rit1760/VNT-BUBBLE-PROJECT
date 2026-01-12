@@ -245,6 +245,7 @@ const confirmDeleteProject = () => {
 
   </div>
 </div>
+
                 ))
 
               )}

@@ -1,3 +1,7 @@
+
+
+
+
 'use client'
 
 import { useState } from "react"
@@ -5,82 +9,131 @@ import "../Styles/UsersPopup.css"
 
 export default function UsersPopup({ onSave, onClose }) {
 
-    const [name, setName] = useState("");
-    const [Pname, psetName] = useState("");
-    const [mail, setMail] = useState("");
-    // const [description, setDescription] = useState("");
-    const [mobile, setMobile] = useState("");
+  const [name, setName] = useState("")
+  const [Pname, psetName] = useState("")
+  const [mobile, setMobile] = useState("")
+  const [mobileError, setMobileError] = useState("")
+  const [mail, setMail] = useState("")
+  const [error, setError] = useState("")
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return regex.test(email)
+  }
 
-        if (!name.trim() || !Pname.trim() || !mail.trim() || !mobile.trim()) { 
-            return alert("this is not a right way");
-         }
+  const validateMobile = (number) => {
+    const regex = /^[6-9]\d{9}$/
+    return regex.test(number)
+  }
 
-        const saveData = { name, mail, mobile , Pname };
+  const handleSubmit = (e) => {
+    e.preventDefault()
 
-        onSave(saveData)
-
-        setName("");
-        psetName("");
-        setMail("");
-        // setDescription("");
-        setMobile("");
+    if (!name.trim() || !Pname.trim() || !mail.trim() || !mobile.trim()) {
+      alert("Please fill all fields")
+      return
     }
-    return (
-        <>
-            <div className="main1_UsersPopup">
-                <div className="container1_UsersPopup">
-                    <div className="row1_UsersPopup">
-                        <div className="col1_UsersPopup">
-                            <h3>Add new Project</h3>
 
-                            <form onSubmit={handleSubmit}>
-                                <div>
-                                    <label htmlFor="Name" >Name</label>
-                                    <input type="text" value={name} placeholder="Name..." onChange={(e) => setName(e.target.value.toUpperCase())} />
-                                </div>
-                                                                <div>
-                                    <label htmlFor="Name" >Project Name</label>
-                                    <input type="text" value={Pname} placeholder="Project Name..." onChange={(e) => psetName(e.target.value)} />
-                                </div>
-                                <div>
-                                    <label htmlFor="Mail" >Mail</label>
-                                    <input type="email" value={mail} placeholder="Mail..." onChange={(e) => setMail(e.target.value)} required />
-                                </div>
-                                {/* <div>
-                                    <label htmlFor="description" >Description</label>
-                                    <input type="text" value={description} placeholder="Description..." onChange={(e) => setDescription(e.target.value)} />
-                                </div> */}
-                                <div>
-                                    <label htmlFor="mobile" >Mobile</label>
-                                    {/* <input type="text" value={mobile} placeholder="Mobile..." onChange={(e) => setMobile(e.target.value)} />
-                                     */}
+    if (!validateEmail(mail)) {
+      alert("Please enter a valid email")
+      return
+    }
 
-                                     <input
-  type="text"
-  value={mobile}
-  onChange={(e) => {
-    const onlyNumbers = e.target.value.replace(/[^0-9]/g, "");
-    setMobile(onlyNumbers);
-  }}
-  placeholder="Mobile..."
-/>
+    if (!validateMobile(mobile)) {
+      alert("Mobile number is invalid")
+      return
+    }
 
-                                </div>
+    const saveData = { name, Pname, mail, mobile }
+    onSave(saveData)
 
-                                <div className="btnU">
-                                    <button type="button" onClick={onClose}>Cancel</button>
-                                    <button type="submit" >save</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+    setName("")
+    psetName("")
+    setMail("")
+    setMobile("")
+    setError("")
+    setMobileError("")
+  }
+
+  return (
+    <div className="main1_UsersPopup">
+      <div className="container1_UsersPopup">
+        <div className="row1_UsersPopup">
+          <div className="col1_UsersPopup">
+            <h3>Add new User</h3>
+
+            <form onSubmit={handleSubmit}>
+              <div>
+                <label>Name</label>
+                <input
+                  type="text"
+                  value={name}
+                  placeholder="Name..."
+                  onChange={(e) => setName(e.target.value.toUpperCase())}
+                />
+              </div>
+
+              <div>
+                <label>Project Name</label>
+                <input
+                  type="text"
+                  value={Pname}
+                  placeholder="Project Name..."
+                  onChange={(e) => psetName(e.target.value)}
+                />
+              </div>
+
+              <div>
+                <label>Mail</label>
+                <input
+                  type="email"
+                  value={mail}
+                  placeholder="Mail..."
+                  onChange={(e) => {
+                    setMail(e.target.value)
+                    setError(
+                      validateEmail(e.target.value)
+                        ? ""
+                        : "Please enter a valid email"
+                    )
+                  }}
+                />
+                {error && <p style={{ color: "red" }}>{error}</p>}
+              </div>
+
+              <div>
+                <label>Mobile</label>
+                <input
+                  type="text"
+                  value={mobile}
+                  placeholder="Mobile..."
+                  maxLength={10}
+                  onChange={(e) => {
+                    const onlyNumbers = e.target.value.replace(/[^0-9]/g, "")
+                    setMobile(onlyNumbers)
+                    setMobileError(
+                      validateMobile(onlyNumbers)
+                        ? ""
+                        : "Enter valid 10-digit Indian mobile number"
+                    )
+                  }}
+                />
+                {mobileError && <p style={{ color: "red" }}>{mobileError}</p>}
+              </div>
+
+              <div className="btnU">
+                <button type="button" onClick={onClose}>Cancel</button>
+                <button type="submit" disabled={error || mobileError}>
+                  Save
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 
